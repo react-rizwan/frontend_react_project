@@ -1,0 +1,9 @@
+.dashboard {
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+.search-box {
+    font-size: 16px;
+    color: #000;
+    display: flex;
+}
