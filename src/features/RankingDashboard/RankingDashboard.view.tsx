@@ -1,5 +1,5 @@
 import type { RankingDashboardViewProps } from "./RankingDashboard.types";
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 import { API_BASE_URL } from "../../config/api";
 import "./RankingDashboard.css";
 import KeywordRankDistribution from "../../components/KeywordRankDistribution/KeywordRankDistribution";
@@ -15,6 +15,7 @@ const RankingDashboardView = ({ title }: RankingDashboardViewProps) => {
   { tilte: 'Estimated Traffic', value: 80, },
   { tilte: 'Traffic Value', value: 90, }
   ];
+  console.log(API_BASE_URL)
   // const [overview, setOverview] = useState<any>(null);
 
   // const payload = {

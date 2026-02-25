@@ -10,7 +10,7 @@ const KeywordRankDistribution = ({ overview }: Props) => {
   // if (!overview) return <p>Loading...</p>;
 
   return (
-    <div className="row"> M
+    <div className="row">
       <div className="col-md-6">
         <div className="card">
           <h2 className="title">Keyword Rank Distribution</h2>
