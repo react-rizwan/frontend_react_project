@@ -57,3 +57,11 @@
 .bottom-section h3 {
   margin: 5px 0 0;
 }
+.sub-title {
+  font: 0.85rem;
+}
+
+.sub-value {
+  font-size: 1.25rem;
+  font-weight: 600;
+}

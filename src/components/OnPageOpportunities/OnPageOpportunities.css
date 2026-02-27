@@ -1,0 +1,110 @@
+.dashboard {
+  padding: 30px;
+  background: #f5f6f8;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.dashboard h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.label {
+  color: #6c757d;
+  margin-bottom: 5px;
+}
+
+.summary h3 {
+  font-size: 28px;
+  margin: 0;
+}
+
+.table-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+
+  /* Fixed Size */
+  height: 400px;
+  width: 100%;
+  border: 1px solid #E7E7E7;
+  /* Scroll Enable */
+  overflow: auto;
+}
+
+.table-header,
+.table-row {
+  display: grid;
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr 1fr 1.5fr;
+  align-items: center;
+  padding: 15px 0;
+  min-width: 900px; /* important for horizontal scroll */
+}
+
+.table-header {
+  font-weight: 600;
+  border-bottom: 1px solid #eee;
+  color: #555;
+  background-color: #fafafa;
+}
+
+.table-row {
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.table-row:last-child {
+  border-bottom: none;
+}
+
+.page {
+  color: #333;
+}
+
+.seo-score {
+  color: #4a6cf7;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.progress {
+  display: flex;
+  height: 6px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 6px;
+  width: 120px;
+}
+
+.progress-green {
+  background: #4caf50;
+}
+
+.progress-red {
+  background: #f44336;
+}
+
+.idea-btn {
+  background: #f8f9fa;
+  border: 1px solid #ddd;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.idea-btn:hover {
+  background: #e9ecef;
+}
+.prog-bar {
+    height: 4px !important;
+    width: 100px;
+}

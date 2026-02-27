@@ -8,40 +8,27 @@ interface Props {
 const KeywordRankDistribution = ({ overview }: Props) => {
   const data = useKeywordRankDistribution(overview);
   // if (!overview) return <p>Loading...</p>;
-
+  console.log(data, 'data')
   return (
-    <div className="row">
-      <div className="col-md-6">
-        <div className="card">
-          <h2 className="title">Keyword Rank Distribution</h2>
+    <div className="card h-100">
+      <h6 className="title">Keyword Rank Distribution</h6>
 
-          <div className="rank-grid">
-            {data?.overview?.map?.((item: any) => (
-              <div className="rank-item">
-                <p>{item.tilte}</p>
-                <h3>{item.value}</h3>
-              </div>
-            ))}
+      <div className="rank-grid">
+        {data?.overview?.rankDist?.map?.((item: any) => (
+          <div className="rank-item">
+            <div className="sub-title">{item.title}</div>
+            <div className="sub-value">{item.value}</div>
           </div>
-        </div>
+        ))}
       </div>
-
-
-      <div className="col-md-6">
-        <div className="card">
-          <h2 className="title">On Page Opportunities</h2>
-
-          <div className="rank-grid">
-            {data?.overview?.map?.((item: any) => (
-              <div className="rank-item">
-                <p>{item.tilte}</p>
-                <h3>{item.value}</h3>
-              </div>
-            ))}
+      <div className="border-top rank-grid mt-2">
+        {data?.overview?.keywordRankDetail?.map?.((elem: any) => (
+          <div className="rank-item mt-3">
+            <div className="sub-title">{elem.title}</div>
+            <div className="sub-value">{elem.value}</div>
           </div>
-        </div>
+        ))}
       </div>
-
     </div>
   );
 };
